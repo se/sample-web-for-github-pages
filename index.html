@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bankamatik</title>
+    <link rel="stylesheet" href="stiller.css" />
+  </head>
+  <body>
+    <div>
+      <div>
+        <div id="baslik">
+          <p>Merhaba, Hoşgeldiniz. Lütfen başlamak için işlem seçin.</p>
+          <button class="btn btn-primary" id="musteri_girisi">
+            Müşteri Girişi
+          </button>
+          <button class="btn btn-success" id="yonetici_girisi">
+            Yönetici Girişi
+          </button>
+        </div>
+        <div class="bolum" id="musteri_paneli" style="display: none;">
+          <h3>Müşteri Girişi</h3>
+          <div class="kutucuk">
+            <label for="musteri_no">Müşteri No</label>
+            <input type="number" id="musteri_no" />
+          </div>
+          <div class="kutucuk">
+            <label for="musteri_parola">Parola</label>
+            <input type="password" id="musteri_parola" />
+            <button id="musteri_parolasini_goster">*</button>
+          </div>
+          <div class="kutucuk">
+            <button id="musteri_bilgileri_dogrula">Bilgilerimi Doğrula</button>
+            <button id="musteri_geri">Geri</button>
+          </div>
+        </div>
+        <div class="bolum" id="yonetici_paneli" style="display: none;">
+          <h3>
+            Yönetici Girişi
+          </h3>
+          <div class="kutucuk">
+            <label for="kullanici_adi">Kullanıcı Adı</label>
+            <input type="text" id="kullanici_adi" />
+          </div>
+          <div class="kutucuk">
+            <label for="kullanici_parola">Parola</label>
+            <input type="password" id="kullanici_parola" />
+          </div>
+          <div class="kutucuk">
+            <button id="yonetici_bilgileri_dogrula">Bilgilerimi Doğrula</button>
+            <button id="yonetici_geri">Geri</button>
+          </div>
+        </div>
+        <div class="bolum" id="yonetici_islemleri" style="display: none;">
+          <h3>Yönetici İşlemleri</h3>
+          <p>Toplam müşteri sayınız: <span id="musteri_sayisi">0</span></p>
+          <p>
+            <button id="yeni_musteri">Müşteri Ekle</button>
+            <button id="yonetici_islemleri_cikis">Çıkış Yap</button>
+          </p>
+          <table id="musteri_tablosu">
+            <thead>
+              <th>İşlem</th>
+              <th>Ad</th>
+              <th>Soyad</th>
+              <th>No</th>
+              <th>Bakiye</th>
+            </thead>
+            <tbody>
+            </tbody>
+          </table>
+        </div>
+        <div id="bankamatik" style="display: none;">
+          <p>
+            Sayın,
+            <span id="musteri_adi"></span>
+          </p>
+          <div>
+            <p>
+              Hesabınızdaki paranız
+              <span style="font-weight: bold;" id="hesaptaki_para"></span> ₺
+            </p>
+          </div>
+          <div>
+            <p>Ne kadar para çekmek istiyorsunuz?</p>
+            <button id="para_cek_20">20 ₺</button>
+            <button id="para_cek_50">50 ₺</button>
+            <button id="para_cek_100">100 ₺</button>
+            <button id="para_cek_250">250 ₺</button>
+            <button id="para_cek_500">500 ₺</button>
+            <button id="para_cek_tutar">Tutarı ben belirtmek istiyorum</button>
+          </div>
+          <button id="karti_cikar">Kartı Çıkar</button>
+        </div>
+      </div>
+    </div>
+    <!-- <script src="calismalar.js"></script> -->
+    <script src="musteri-islemleri.js"></script>
+    <script src="yonetici-islemleri.js"></script>
+  </body>
+</html>

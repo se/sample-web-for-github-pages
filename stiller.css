@@ -1,0 +1,76 @@
+* {
+  font-family: "Dank Mono";
+}
+
+body {
+  color: #333333;
+  background: #dddddd;
+  text-align: center;
+  padding: 0;
+}
+
+#musteri_adi {
+  color: red;
+  font-weight: bold;
+}
+
+button {
+  margin-bottom: 10px;
+  background-color: black;
+  color: white;
+  border: 1px solid red;
+  font-size: 12pt;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 10px;
+  padding-right: 10px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: red;
+}
+
+.sil-butonu, .duzenle-butonu {
+  padding-top: 2px;
+  padding-bottom: 2px;
+  padding-left: 4px;
+  padding-right: 4px;
+  font-size: 10pt;
+}
+
+.duzenle-butonu {
+  background-color: blue;
+  margin-left: 5px;
+}
+
+.bolum {
+  border: 1px solid #333;
+  padding: 10px;
+}
+
+.bolum h3 {
+  color: red;
+  background-color: white;
+  margin-top: 0;
+}
+
+.kutucuk {
+  text-align: left;
+  margin-bottom: 10px;
+}
+
+.kutucuk label {
+  min-width: 120px;
+  display: inline-block;
+}
+
+table {
+  width: 100%;
+}
+
+table td,
+table th {
+  border: 1px solid #333;
+  vertical-align: middle;
+}
